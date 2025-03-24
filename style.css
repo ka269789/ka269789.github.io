@@ -338,7 +338,6 @@
     color: var(--accent-color);
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    display: flex;
     align-items: center;
 }
 
@@ -382,7 +381,6 @@
 .divider {
     height: 1px;
     background: rgba(255, 255, 255, 0.2);
-    margin: 1.5rem 0;
 }
 
 .demo-caption {
@@ -414,4 +412,4 @@
 .primary-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-           }
+}
