@@ -25,127 +25,7 @@
             align-items: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-/* SSTV板块样式 */
-.sstv-section {
-    background: rgba(42, 67, 101, 0.8);
-    padding: 2.5rem;
-    border-radius: 12px;
-    margin: 3rem 0;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
 
-.section-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.section-header h2 {
-    color: #F6AD55;
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.section-divider {
-    width: 80px;
-    height: 3px;
-    background: #F6AD55;
-    margin: 0 auto;
-}
-
-.sstv-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.sstv-intro, .sstv-demo {
-    flex: 1;
-    min-width: 300px;
-}
-
-.sstv-intro h3 {
-    color: #F6AD55;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.sstv-intro p {
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-.sstv-tech h4 {
-    color: #F6AD55;
-    margin-bottom: 0.8rem;
-}
-
-.sstv-tech ul {
-    padding-left: 1.5rem;
-}
-
-.sstv-tech li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-}
-
-.sstv-image-container {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.sstv-image {
-    max-width: 100%;
-    border: 2px solid #F6AD55;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-}
-
-.sstv-caption {
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.7);
-    margin-top: 0.5rem;
-}
-
-.sstv-software h4 {
-    color: #F6AD55;
-    margin-bottom: 1rem;
-}
-
-.sstv-software ul {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.sstv-software a {
-    color: #F6AD55;
-    text-decoration: none;
-    transition: opacity 0.3s;
-}
-
-.sstv-software a:hover {
-    opacity: 0.8;
-}
-
-.sstv-btn {
-    background: #F6AD55;
-    color: #2A4365;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.sstv-btn:hover {
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    .sstv-content {
-        flex-direction: column;
-    }
-}
         .nav-logo {
             height: 40px;
         }
@@ -446,4 +326,92 @@
     margin-bottom: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-    
+  /* SSTV板块 - 统一样式 */
+.sstv-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.title-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.description {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.feature-title, .demo-title, .software-title {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    padding-left: 1rem;
+}
+
+.feature-item {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.feature-label {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 1.5rem 0;
+}
+
+.demo-caption {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.software-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.software-item {
+    margin-bottom: 0.6rem;
+}
+
+.primary-btn {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+           }
