@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>近期活动 - 业余无线电爱好者社区</title>
+    <meta name="keywords" content="业余无线电,HAM社区,无线电活动">
+    <!-- 引入外部样式表 -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+<style>
+.main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 1px solid #F6AD55;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    width:70%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.7);
+}</style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="导航菜单">☰</button>
+        <div class="nav-links">
+            <a href="../">首页</a>
+            <a href="../gy/">关于我们</a>
+            <a href="" class="active">近期活动</a>
+            <a href="../con.html">联系我们</a>
+        </div>
+        <img src="../logo.png" alt="社区logo" class="nav-logo">
+    </nav>
+
+    <!-- 活动内容 -->
+    <div class="container">
+        <header class="page-header">
+            <h1>近期活动</h1>
+            <p>探索最新无线电活动和交流机会</p>
+        </header>
+
+        <!-- 活动列表 -->
+        <section class="activity-list">
+            <article class="activity-card">
+                <h2>2024春季通联大会</h2>
+                <div class="activity-meta">
+                    <span class="activity-date">📅 2024年4月20日</span>
+                    <span class="activity-location">📍 北京无线电活动中心</span>
+                </div>
+                <p class="activity-desc">
+                    年度最大规模线下通联活动，包含设备展示、技术讲座和实战演练环节，提供免费设备调试服务。
+                </p>
+                <a href="#" class="btn-register">立即报名</a>
+            </article>
+
+            <article class="activity-card">
+                <h2>短波通联训练营</h2>
+                <div class="activity-meta">
+                    <span class="activity-date">📅 2024年5月1日-5月3日</span>
+                    <span class="activity-location">📍 在线直播+上海分会场</span>
+                </div>
+                <p class="activity-desc">
+                    三天高强度短波通联培训，由BH3ABC等资深火腿带队，包含天线架设实战教学。
+                </p>
+                <a href="#" class="btn-register">查看详情</a>
+            </article>
+
+            <article class="activity-card">
+                <h2>无线电测向竞赛</h2>
+                <div class="activity-meta">
+                    <span class="activity-date">📅 2024年6月15日</span>
+                    <span class="activity-location">📍 杭州西溪湿地公园</span>
+                </div>
+                <p class="activity-desc">
+                    年度无线电测向(Fox Hunting)挑战赛，分专业组和业余组，获胜者可获YAESU设备优惠券。
+                </p>
+                <a href="#" class="btn-register">参赛报名</a>
+            </article>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+<!-- 页脚 -->
+<footer class="main-footer">
+    <div class="footer-content">
+        <p>© 2024 业余无线电社区 | 遵循<br>CC BY-NC 4.0协议</p>
+    </div>
+</footer>
+
+    <!-- 公共JavaScript -->
+    <script>   // 导航菜单切换
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // 关闭移动端菜单
+        document.addEventListener('click', (e) => {
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (!menuBtn.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });</script>
+</body>
+</html>
