@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>业余无线电爱好者社区</title>
+    <meta name="keywords" content="业余无线电,HAM社区,无线电通联,QQ群,微信群">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="导航菜单">☰</button>
+        <div class="nav-links">
+            <a href="../index.html">首页</a>
+            <a href="../gy">关于我们</a>
+            <a href="../hd">近期活动</a>
+            <a href="/con.html">联系我们</a>
+        </div>
+        <img src="logo.png" alt="社区logo" class="nav-logo">
+    </nav>
+
+    <div class="container">
+        <header class="header">
+            <h1>业余无线电爱好者社区</h1>
+            <p>连接全球无线电爱好者，探索无限通联可能</p>
+ 
+<h2 class="contact-title">立即加入社区</h2>
+        </header>
+
+        <div class="content-section">
+            <div class="card">
+                <h2>加入QQ交流群</h2>
+                <div class="qq-group">
+                    <span id="qqNumber">1038907002</span>
+                    <button class="copy-btn" onclick="copyQQ()">复制群号</button>
+                </div>
+                <p>小电波大世界</p>
+            </div>
+
+            <div class="card">
+                <h2>微信交流群</h2>
+                <div class="wechat-qr"><img src="rc.jpg" width="100%"/></div>
+                <p>扫码加入微信群，有效期7天，过期联系xzm2013@outlook.com</p>
+            </div>
+        </div>
+       <!-- 新增板块：无线电的用处与如何接触 -->
+
+        <footer class="footer">
+            <div class="footer-contact">
+      
+            </div>
+            <p>© 2024 业余无线电社区 | 遵循CC BY-NC 4.0协议</p>
+        </footer>
+    </div>
+
+    <script>
+     // 导航菜单切换
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // 关闭移动端菜单
+        document.addEventListener('click', (e) => {
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (!menuBtn.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
