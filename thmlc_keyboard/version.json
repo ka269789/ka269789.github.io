@@ -1,0 +1,7 @@
+{
+  "version": "1.0.1",
+  "update_url": "http://www.thmlc.cn/thmlc_keyboard/thmlc_keyboard_v1.0.zip",
+  "description": "修复了GUI模式下的兼容性问题，增强了串口连接稳定性。",
+  "force_update": false,
+  "publish_date": "2025-8-27",
+}
